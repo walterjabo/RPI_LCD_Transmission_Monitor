@@ -1,0 +1,3 @@
+#!/bin/sh
+script='/home/pi/writable/lcd/Adafruit-Raspberry-Pi-Python-Code/Adafruit_CharLCD/torrents2.py'
+/usr/bin/python $script &
