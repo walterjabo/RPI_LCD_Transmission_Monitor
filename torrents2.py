@@ -63,6 +63,10 @@ def workerMostrarPorcentaje(lcd):
 	while 1:
 		torrent_list = tc.get_torrents()
 		torrent_length = len(torrent_list)
+
+		if torrent_index >= torrent_length:
+			torrent_index = 0
+			
 		torrent = torrent_list[torrent_index]
 		torrent_name = torrent.name
 		percent = torrent.percentDone * 100;
